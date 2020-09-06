@@ -12131,7 +12131,7 @@ p.nominalBounds = new cjs.Rectangle(-425.3,-76.7,850.6,144.3);
 
 //}, 100);
                       stage.on("drawstart", initTextStyle, this, true);
-		
+		alert('initTextStyle0');
 		function initTextStyle() {
 		
 			document.addEventListener('keyup', function (e) {
