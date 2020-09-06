@@ -12124,12 +12124,13 @@ p.nominalBounds = new cjs.Rectangle(-425.3,-76.7,850.6,144.3);
 		stage.enableMouseOver(20);
 		var vid, source, removeBtn, parent, grand_father;
 		
-		setTimeout(function () {
-		
-			initTextStyle();
-		
-		
-		}, 100);
+		//setTimeout(function () {
+
+//	initTextStyle();
+
+
+//}, 100);
+                      stage.on("drawstart", initTextStyle, this, true);
 		
 		function initTextStyle() {
 		
