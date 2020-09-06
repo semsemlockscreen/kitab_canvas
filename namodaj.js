@@ -12141,14 +12141,7 @@ stage.on("drawstart", initTextStyle, this, true);
 				}
 			});
 		
-		
-		
-		alert('initTextStyle');
-		
-		
-		
-		
-		
+	
 		
 		
 			vid = document.getElementById('vi');
@@ -12536,7 +12529,7 @@ stage.on("drawstart", initTextStyle, this, true);
 		//Mouse UP and SNAP====================
 		function onpressup(evt) {
 		
-		
+		        alert('onpressup'+evt) ;
 			cont.isDragged = false;
 		
 		}
@@ -15041,7 +15034,7 @@ stage.on("drawstart", initTextStyle, this, true);
 			function onmousedown(e) {
 		
 		
-		
+		                    alert('from dragand drop');
 				e.nativeEvent.preventDefault();
 		
 		
