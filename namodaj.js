@@ -12847,7 +12847,7 @@ stage.on("drawstart", initTextStyle, this, true);
 		that.tool_enable = tool_enable;
 		
 		function totam(evt) {
-		
+		if (that.parent.isDragged) return;
 			//	clearKtb();
 		
 			blockChafaf();
