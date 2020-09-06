@@ -12247,7 +12247,7 @@ stage.on("drawstart", initTextStyle, this, true);
 		function blok(e) {
 		
 		
-			e.stopImmediatePropagation();
+			e.stopPropagation();
 		
 			//bloc event bubble ;
 		
@@ -12399,9 +12399,9 @@ stage.on("drawstart", initTextStyle, this, true);
 		
 		
 		function toNx(ev) {
-		alert( ev.nativeEvent);
+		alert( ev.nativeEvent.type);
 			if (ev.nativeEvent instanceof MouseEvent) {
-		alert( 'currentPage');
+		alert( currentPage);
 				if (currentPage + 2 > maxPage) return;
 		
 				currentPage += 2;
