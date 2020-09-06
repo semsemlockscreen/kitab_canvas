@@ -12399,7 +12399,7 @@ stage.on("drawstart", initTextStyle, this, true);
 		
 		
 		function toNx(ev) {
-		console.log('into toNx ' + ev);
+		alert( ev);
 			if (ev.nativeEvent instanceof MouseEvent) {
 		
 				if (currentPage + 2 > maxPage) return;
