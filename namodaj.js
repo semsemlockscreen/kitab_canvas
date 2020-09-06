@@ -12142,7 +12142,7 @@ p.nominalBounds = new cjs.Rectangle(-425.3,-76.7,850.6,144.3);
 			});
 		
 		
-		
+		alert('initTextStyle');
 		
 		
 		
