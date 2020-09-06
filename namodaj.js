@@ -12205,10 +12205,10 @@ stage.on("drawstart", initTextStyle, this, true);
 			that.prv.addEventListener("rollout", outBtn);
 		
 		
-			that.next.addEventListener("click", toNx);
+			
 			that.next.addEventListener("rollover", overBtn);
 			that.next.addEventListener("rollout", outBtn);
-		
+		        that.next.addEventListener("click", toNx);
 		
 			////alert(that.children.length);
 		
