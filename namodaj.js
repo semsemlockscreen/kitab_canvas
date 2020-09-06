@@ -9581,7 +9581,9 @@ p.nominalBounds = new cjs.Rectangle(-32,-19.6,64.4,36.6);
 		
 		
 		function handle8(e) {
-		
+			
+		if (that.parent.isDragged) return;
+
 			console.log("clicked" + e.currentTarget);
 			switch (e.currentTarget) {
 		
@@ -9633,7 +9635,9 @@ p.nominalBounds = new cjs.Rectangle(-32,-19.6,64.4,36.6);
 		
 		
 		function handle10(e) {
-		
+			
+		if (that.parent.isDragged) return;
+
 		console.log("clicked" +e.currentTarget);
 			switch (e.currentTarget) {
 			
