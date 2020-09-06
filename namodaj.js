@@ -12121,9 +12121,18 @@ p.nominalBounds = new cjs.Rectangle(-425.3,-76.7,850.6,144.3);
 		var update_coord = false;
 		document.body.style.overflow = 'hidden';
 		
-		stage.enableMouseOver(20);
+		
 		var vid, source, removeBtn, parent, grand_father;
 		
+		//enable mouse over/out listner
+		stage.enableMouseOver(20);
+		
+		// enable touch interactions if supported on the current device:
+		createjs.Touch.enable(stage, false, true);
+		
+		//from Docs : Prevents selection of other elements in the html page if the user clicks and drags, or double clicks on the canvas.
+		//This works by calling preventDefault() on any mousedown events (or touch equivalent) originating on the canvas. Default = true.
+		stage.preventSelection = false;
 		//setTimeout(function () {
 
 //	initTextStyle();
@@ -12230,11 +12239,7 @@ stage.on("drawstart", initTextStyle, this, true);
 		
 		
 		var chafaf = new lib.chafaf();
-		
-		// enable touch interactions if supported on the current device:
-		createjs.Touch.enable(stage, false, true);
-		
-		
+	
 		
 		
 		function blok(e) {
@@ -12392,11 +12397,9 @@ stage.on("drawstart", initTextStyle, this, true);
 		
 		
 		function toNx(ev) {
-			alert('ev'+ ev.type);
-			stage.preventSelection = false;
-		alert( 'ev.native' + ev.nativeEvent.type);
+			
 			if (ev.nativeEvent instanceof MouseEvent) {
-		alert( currentPage);
+		
 				if (currentPage + 2 > maxPage) return;
 		
 				currentPage += 2;
