@@ -12132,7 +12132,7 @@ p.nominalBounds = new cjs.Rectangle(-425.3,-76.7,850.6,144.3);
 		
 		//from Docs : Prevents selection of other elements in the html page if the user clicks and drags, or double clicks on the canvas.
 		//This works by calling preventDefault() on any mousedown events (or touch equivalent) originating on the canvas. Default = true.
-		stage.preventSelection = false;
+		stage.preventSelection = true;
 		//setTimeout(function () {
 
 //	initTextStyle();
