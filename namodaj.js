@@ -12399,9 +12399,9 @@ stage.on("drawstart", initTextStyle, this, true);
 		
 		
 		function toNx(ev) {
-		alert( ev);
+		alert( ev.nativeEvent);
 			if (ev.nativeEvent instanceof MouseEvent) {
-		
+		alert( 'currentPage');
 				if (currentPage + 2 > maxPage) return;
 		
 				currentPage += 2;
