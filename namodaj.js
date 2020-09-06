@@ -12130,9 +12130,7 @@ p.nominalBounds = new cjs.Rectangle(-425.3,-76.7,850.6,144.3);
 		// enable touch interactions if supported on the current device:
 		createjs.Touch.enable(stage, false, true);
 		
-		//from Docs : Prevents selection of other elements in the html page if the user clicks and drags, or double clicks on the canvas.
-		//This works by calling preventDefault() on any mousedown events (or touch equivalent) originating on the canvas. Default = true.
-		stage.preventSelection = true;
+		
 		//setTimeout(function () {
 
 //	initTextStyle();
@@ -15038,7 +15036,7 @@ stage.on("drawstart", initTextStyle, this, true);
 			function onmousedown(e) {
 		
 		
-		                    alert('from drag and drop');
+		                   
 				e.nativeEvent.preventDefault();
 		
 		
