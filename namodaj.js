@@ -12393,6 +12393,7 @@ stage.on("drawstart", initTextStyle, this, true);
 		
 		function toNx(ev) {
 			alert('ev'+ ev.type);
+			stage.preventSelection = false;
 		alert( 'ev.native' + ev.nativeEvent.type);
 			if (ev.nativeEvent instanceof MouseEvent) {
 		alert( currentPage);
