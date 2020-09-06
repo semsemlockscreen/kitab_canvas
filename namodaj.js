@@ -9858,7 +9858,7 @@ p.nominalBounds = new cjs.Rectangle(-119.8,-2.4,176.3,16.7);
 	this.frame_25 = function() {
 		this.stop();
 		stage.enableMouseOver(20);
-		    //this.bookcp.addEventListener("click", toNx);
+		        this.bookcp.addEventListener("click", toNx);
 			this.bookcp.addEventListener("mouseover", overBtn);
 			this.bookcp.addEventListener("mouseout", outBtn);
 		
@@ -12374,7 +12374,7 @@ stage.on("drawstart", initTextStyle, this, true);
 		}
 		
 		function toPrv(ev) {
-		
+		alert('prev');
 			if (ev.nativeEvent instanceof MouseEvent) {
 		
 				if (currentPage - 2 < 0) return;
