@@ -12121,7 +12121,7 @@ p.nominalBounds = new cjs.Rectangle(-425.3,-76.7,850.6,144.3);
 		var update_coord = false;
 		document.body.style.overflow = 'hidden';
 		
-		//stage.enableMouseOver(20);
+		stage.enableMouseOver(20);
 		var vid, source, removeBtn, parent, grand_father;
 		
 		setTimeout(function () {
