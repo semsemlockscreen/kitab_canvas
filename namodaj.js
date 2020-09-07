@@ -12375,6 +12375,7 @@ stage.on("drawstart", initTextStyle, this, true);
 		
 		function toPrv(ev) {
 		alert('prev');
+			stage.preventSelection = false;
 			if (ev.nativeEvent instanceof MouseEvent) {
 		
 				if (currentPage - 2 < 0) return;
