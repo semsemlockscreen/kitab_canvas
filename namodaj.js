@@ -12995,17 +12995,18 @@ stage.on("drawstart", initTextStyle, this, true);
 		
 		
 			function extCommunicate(evt) {
-				lectureMc.addChildAt(evt.currentTarget, lectureMc.numChildren - 1);
-				if (!stat) {
-					evt.currentTarget.gotoAndPlay(2)
-					stat = true;
-				} else {
-					evt.currentTarget.gotoAndPlay(26);
-					stat = false;
-				}
+				if (ev.nativeEvent instanceof MouseEvent) {
+		lectureMc.addChildAt(evt.currentTarget, lectureMc.numChildren - 1);
 		
-			}
-		
+		if (!stat) {
+			evt.currentTarget.gotoAndPlay(2)
+			stat = true;
+		} else {
+			evt.currentTarget.gotoAndPlay(26);
+			stat = false;
+		}
+	}
+	}
 			lectureMc.addEventListener("removed", removeListeners);
 		
 			function removeListeners(e) {
