@@ -12995,7 +12995,7 @@ stage.on("drawstart", initTextStyle, this, true);
 		
 		
 			function extCommunicate(evt) {
-				if (ev.nativeEvent instanceof MouseEvent) {
+				if (evt.nativeEvent instanceof MouseEvent) {
 		lectureMc.addChildAt(evt.currentTarget, lectureMc.numChildren - 1);
 		
 		if (!stat) {
