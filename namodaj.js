@@ -12461,7 +12461,7 @@ stage.on("drawstart", initTextStyle, this, true);
 		
 			cont.isDragged = false;
 		
-			stage.preventSelection = false;
+			//stage.preventSelection = false;
 		
 		
 			var pt = that.globalToLocal(e.stageX, e.stageY);
@@ -12537,7 +12537,7 @@ stage.on("drawstart", initTextStyle, this, true);
 		function onpressup(evt) {
 		
 		        
-			//cont.isDragged = false;
+			cont.isDragged = false;
 		
 		}
 		
