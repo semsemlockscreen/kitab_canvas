@@ -12374,7 +12374,7 @@ stage.on("drawstart", initTextStyle, this, true);
 		}
 		
 		function toPrv(ev) {
-		alert('prev');
+		
 			stage.preventSelection = false;
 			if (ev.nativeEvent instanceof MouseEvent) {
 		
